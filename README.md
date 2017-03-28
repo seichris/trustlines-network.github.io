@@ -2,7 +2,7 @@
 
 Enabling permissionless mobile payments based on people powered money. 
 Join the conversation on Slack: http://v.ht/rDR4 
-Read the the white paper: http://trustlines.network/whitepaper.html
+Read the white paper: http://trustlines.network/whitepaper.html
 
 Made using Jekyll Pages
 
