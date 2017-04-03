@@ -1,0 +1,93 @@
+---
+---
+
+@charset "utf-8";
+
+// Example Defaults
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// images
+$header-font-image-path: url('../img/trustlines_network2.png');
+$header-font-image-path2: url('../img/trustlines_network3.png');
+$header-image-path-2k: url('../img/background_2k.jpg');
+$header-image-path-1k1: url('../img/background_1k1.jpg');
+$header-image-path-2k1: url('../img/background_2k11.jpg');
+$header-image-path-1k2: url('../img/background_1k2.jpg');
+$header-image-path-2k2: url('../img/background_2k2.jpg');
+$header-image-path-1k3: url('../img/background_1k3.jpg');
+$header-image-path-2k3: url('../img/background_2k3.jpg');
+$header-image-path-4k: url('../img/background_4k.jpg');
+$header-image-path-4k1: url('../img/background_4k1.jpg');
+$header-image-path-4k2: url('../img/background_4k2.jpg');
+$header-image-path-4k3: url('../img/background_4k3.jpg');
+$unicorn-logo-path: url('../img/Head-LOGO.svg');
+
+
+// variables.less
+$red-lighten-5: #ffebee;
+$red-lighten-4: #ffcdd2;
+$red-lighten-5: #ffebee;
+$red-lighten-3: #ef9a9a;
+$red-lighten-2: #e57373;
+$red-lighten-1: #ef5350;
+$red: #f44336 red;
+$red-darken-1: #e53935;
+$red-darken-2: #d32f2f;
+$red-darken-3: #c62828;
+$red-darken-4: #b71c1c;
+$red-accent-1: #ff8a80;
+$red-accent-2: #ff5252;
+$red-accent-3: #ff1744;
+$red-accent-4: #d50000;
+
+$blue-grey-lighten-5:#eceff1;
+$blue-grey-lighten-4: #cfd8dc;
+$blue-grey-lighten-3: #b0bec5;
+$blue-grey-lighten-2: #90a4ae;
+$blue-grey-lighten-1: #78909c;
+$blue-grey: #607d8b;
+$blue-grey-darken-1: #546e7a;
+$blue-grey-darken-2: #455a64;
+$blue-grey-darken-3: #37474f;
+$blue-grey-darken-4: #263238;
+
+$chosen-blue: #002f59;
+
+$navbar-height: 20px;
+
+$theme-primary: $red-lighten-1; /* primary colors and its red */
+$theme-dark: $chosen-blue; /*background color */
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base",
+        url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i')
+;

@@ -1,0 +1,32 @@
+# Site settings
+title: Trustlines Network
+email:
+description: "The global platform which enables permissionless mobile payments based on people powered money"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+author: brainbot technologies AG
+
+twitter_username: Trustlines_Net
+slack_invite_url: http://trustlines-network-slackinvite.herokuapp.com
+github_username: trustlines-network
+facebook_username: Trustlines.Network
+subreddit_name: Trustlines
+medium_name: Trustlines
+
+gems:
+  - jekyll-seo-tag
+
+logo: http://trustlines.network/img/logo.png
+google_site_verification: googlea255aea984802e8e
+image: http://trustlines.network/img/logo.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: http://trustlines.network/img/logo.png
+
+collections:
+  - faq
+# Build settings
+markdown: kramdown

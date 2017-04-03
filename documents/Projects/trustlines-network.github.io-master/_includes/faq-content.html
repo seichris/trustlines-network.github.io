@@ -1,0 +1,402 @@
+{% assign categories = "Introduction to the concept" | split: ", " %}
+{% for category in categories %}
+<section {% cycle '', 'class="bg-dark"' %} id="main-text">
+
+  <div class="container ">
+  <div class="col-lg-12 text-center">
+  <!--  <h2> {{ category }} </h2> -->
+        <h2> Introduction </h2>
+    <hr class="dark">
+  </div>
+  </div>
+  <div class="container">
+    {% for faq in site.faq %}
+    {% if category == faq.category %}
+    <div class="col-lg-8 col-lg-offset-2 text-left">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <h2>Why People Powered Money!!?</h2>
+              </a>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+            <div class="card-block">
+              <p>People Powered Money basically means complementary currencies, which are currencies supplementing the legal tender issued and controlled by formal central entities such as commercial or central banks.</p>
+
+              <p>People Powered Money has benefits for individuals, local communities, businesses and the economy as a whole. Please see greater implications to see an elaboration of some of these benefits.</p>
+
+              <p>We believe People Powered Money fits particularly well in our context because trustlines money in fact is issued in a decentralised way and informally collateralised by people's interpersonal relations of trust. This means people indeed have a choice whether they want to support a given currency or not.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h2>What does IOU mean?</h2>
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF" >
+            <div class="card-block">
+              <p>An IOU (I owe you) is a promise to pay whatever account measure has been agreed upon, back at a later point in time. In the Trustlines Network, we refer to IOU's within a specific currency network as Trustlines Money. These can be denominated in a real world currency, a commodity, a crypto token or any other unit of account users may agree upon.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h2>What is a creditline?</h2>
+              </a>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+            <div class="card-block">
+              <p>A creditline is set up between two trusting entities (e.g. friends), allowing one party to be indebted to the other.</p>
+
+              <p>When setting up a creditline in the trustlines network, the users sign an agreement on the Ethereum blockchain, which specifies 'in what measure and how much' the creditor allows the debitor to be indebted with, of which the debtor also signs he is obligated to pay off the debt?</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingFour">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h2>How does a trustline work?</h2>
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+            <div class="card-block">
+              <p>When both parties have provided each other with a credit line in the same type of trustlines money (e.g. Euros) it is a bilateral agreement and is then called a trustline. The beauty of having several existing trustlines within a currency network is the ability to facilitate cheap, secure and fast transactions routing through a chain of trustlines existing between friends-of-friends-of-friends.</p>
+
+              <p>In essence this enables everyone to issue currencies to make global payments through ones interpersonal trusted social network.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingFive">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <h2>Why several currency networks?</h2>
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+            <div class="card-block">
+              <p>The possibility to participate in several currency networks makes a user capable of benefiting from both local resilient and global interconnected networks. One user can for example decide to set up a currency network for a local 'circular economy' network that has inbuilt demurrage, a mutual-credit element, and does not allow for interests.</p>
+
+              <p>The trustlines network supports a variety of ways of customising currency networks, of which there are still many to be explored. The platform moreover supports ERC20 tokens.Trustline money in a default currency network can be exchanged for ETH and vice versa on an on-chain exchange. Therefore one can always tell what the value of trustline money is compared to other currencies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingSix">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <h2>Can I create money out of nothing?</h2>
+              </a>
+            </h5>
+          </div>
+          <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+            <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+            <div class="card-block">
+              <p>The short answer is yes.</p>
+
+              <p>Similar to a fractional reserve commercial bank, you are able to create money, symbolising future promises out of nothing. This does however far from guarantee somebody will accept these promises. The money you create is only as much worth as the value your trustlines connections have decided to trust you with.</p>
+
+              <p>When individuals issue credit they are, contrary to sales employees in banks, personally liable. Not only will friends also be more understanding if you miss a payment, they probably also know your spending habits a lot better than banks. We believe this incentivizes a higher degree of financial responsibility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  </div>
+  </div>
+    </section>
+  {% endfor %}
+
+  {% assign categories = "Introduction to the concept" | split: ", " %}
+  {% for category in categories %}
+  <section class="bg-image2" id="main-text">
+<div class="container ">
+<div class="col-lg-12 text-center">
+<!--  <h2> {{ category }} </h2> -->
+      <h2> Greater implications </h2>
+  <hr class="dark">
+</div>
+</div>
+<div class="container">
+  {% for faq in site.faq %}
+  {% if category == faq.category %}
+  <div class="col-lg-8 col-lg-offset-2 text-left">
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+  <!--    <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h2>Why use Trustlines instead of regular money?</h2>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+          <div class="card-block">
+            <p>
+            Asking this question, you properly already have access to a bank account, credit card and/or mobile payments.
+            Complementing your regular financial channels with the Trustlines Network offers you:
+            </p>
+            <p>
+              <ul>
+                <li>            Cheaper, secure and faster global transactions
+                <li>            The easiest gateway to virtual complementary currencies
+                <li>            The power to decide who you want to be liable to
+              </ul>
+            </p>
+            <p>
+              In short, you would prefer to take control by retaining the benefits of acting as a bank.
+              You would also like to decide yourself who you are comfortable being liable to you,
+              and who you would like to be liable to.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="card">
+      <div class="card-header" role="tab" id="headingSeven">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <h2>How can Trustlines help the unbanked?</h2>
+          </a>
+        </h5>
+      </div>
+      <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+        <div class="padding" style="padding-bottom: 1px">
+        <div class="card-block">
+          <p>While the unbanked are increasingly getting smartphones, they still cannot get financial services because both mobile applications and traditional banks require government ID/cash deposits or credit cards to work. The Trustlines Network enables the unbanked access to payments without the needing any of that this is made possible by credit issuance through the social graph of every user.</p>
+
+          <p>The Trustlines Network provides the unbanked the means for payment, exchange, savings, loaning as well as access to future financial empowering tools. Interpersonal relations often governs credit issuance in many unbanked societies and the Trustlines Network is based on the same simple and proven mechanisms found in for example, the Hawala system.</p>
+
+          <p>The big difference to these current informal offerings is the automatic accounting system, mutually agreed upon conditions, as well as the tamper-proof documentation of who owes what to whom.</p>
+        </div>
+      </div>
+    </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingEight">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              <h2>Why is Trustlines useful for local circular economies?</h2>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
+          <div class="padding" style="padding-bottom: 1px" >
+          <div class="card-block">
+            <p>Local currencies, specific to a community, offer a way to keep money circulating increasing the economic activity within the realm of the community. This is contrary to pumping 'international homogeneous' currencies into an area, which tends to flow straight back to the source, without making any sustainable economic community impact.</p>
+
+            <p>At the same time, communities tend to have a demand for goods or services provided by outside suppliers, which means they also need to be able to pay in currencies that they trust and accept.</p>
+
+            <p>This dilemma requires that communities use more than one currency which is exactly what the Trustlines Network enables. This means a community can both conduct circular trade within a customised local and resilient currency while also being able to participate in interconnected currency networks.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    <!--  <div class="card">
+        <div class="card-header" role="tab" id="headingThree">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h2>Why not just stick with regular bank issued money?</h2>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+          <div class="card-block">
+            <p>When individuals issue credit, they are contrary to sales employees in banks, personally liable. Not only will friends also be more understanding if you miss a payment, they properly also know your spending habits a lot better than banks. We believe this incentives a higher degree of financial responsibility.</p>
+
+            <p>In fact when you deal with inflexible, expensive banks who gamble with and profit from, storing your virtual fiat money - do you really have any idea who you are in the same boat with?</p>
+          </div>
+        </div>
+      </div>-->
+      <div class="card">
+        <div class="card-header" role="tab" id="headingNine">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              <h2>How can businesses benefit from trustlines?</h2>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine">
+          <div class="padding" style="padding-bottom: 1px">
+          <div class="card-block">
+            <p>Setting up a business currency network can provide businesses with interest-free liquidity to enhance the mutually beneficial exchange of goods and services. Businesses can therefore reduce the reliance on legal tender and expensive banking services and only spend legal tender for operational costs outside of the business network.</p>
+
+            <p>In periods of economic recession such business networks can indeed also provide a counter-cyclical stabilisation mechanism, insofar that they guarantee a minimum of economic activity in an event of low fiat liquidity in circulation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingTen">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              <h2>How is the concept different from a LETSystem?</h2>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen">
+          <div class="padding" style="padding-bottom: 1px">
+          <div class="card-block">
+            <p>The Trustlines Network can be viewed as an interconnected global network of LETSystems in which each subsystem is managed by a single individual.</p>
+
+            <p>A classic LETSystem is centralized and only tracks obligations to and from central intermediaries in a mutual-credit fashion. In effect, this means if someone defaults, the loss of credit is shared with everyone, thus arguably only making it suitable for small communities.</p>
+
+            <p>With Trustlines, obligations are dedicated to specific individuals who agreed to trust you, holding you personally accountable. We believe personal trust relations based on individual reliability provides a stronger incentive for individuals to honor their obligations than in a mutual-credit based system.</p>
+
+            <p>In addition comes the benefit of automatic accounting, tamper-proof documentation as well as the option to enable currency network interoperability.</p>
+          </div>
+        </div>
+      </div>
+
+
+    <!--  <div class="card">
+        <div class="card-header" role="tab" id="headingSeven">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              <h2>Will inflation affect the Trustlines Network?</h2>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+          <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+          <div class="card-block">
+            <p>Trustlines currency networks can be customized according to how a community belief is the best way to deal with inflation.</p>
+
+            <p>For currency-networks denominated in real world fiat: No problem, as long as the denotations only represent a small share in the overall economic activity in that currency. Otherwise: Competition of currencies. Those with stricter governance might be favored. Resilience through diversity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingEight">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              <h2>What is up with the unicorn logo?</h2>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
+          <div class="padding" style="padding-bottom: 1px; background-color:#FFFFFF">
+          <div class="card-block">
+            <p>First of all we are big fans of the mysterious magic Unicorn.</p>
+
+            <p>In ancient mythology, the Unicorn is said to provide the eyes for humans to see the infinite
+            possibilities surrounding them, as well as offering everyone the wisdom to take advantage of these possibilities.</p>
+
+            <p>In the same fashion, The Trustlines Network seeks to enable everyone to become aware of the financial environment
+            surrounding them, and provide the means for individuals, communities and businesses to become financially empowered.</p>
+          </div>
+        </div>
+      </div> -->
+
+
+
+    </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+</div>
+</div>
+  </section>
+{% endfor %}
+
+
+<section id="contact">
+  <div class="container ">
+  <div class="col-lg-12 text-center">
+        <h2> Do you have further questions? </h2>
+        <hr class="dark">
+        <p>   </p>
+  </div>
+  </div>
+  <h5 class="mb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>
+
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div class="col-lg-3 col-xs-3 text-center">
+                <a href="http://www.facebook.com/{{ site.facebook_username }}/?fref=ts">
+                <i class="fa fa-facebook fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <!--<p>{{ site.facebook_username }}</p>-->
+                </a>
+            </div>
+          <div class="col-lg-3 col-xs-3 text-center">
+              <a href="https://twitter.com/{{ site.twitter_username }}">
+                  <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                  <!--<p>{{ site.twitter_username }}</p>-->
+              </a>
+          </div>
+          <div class="col-lg-3 col-xs-3 text-center">
+              <a href="https://reddit.com/r/{{ site.subreddit_name }}/">
+              <i class="fa fa-reddit fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                  <!--<p>{{ site.subreddit_name }}</p>-->
+              </a>
+          </div>
+          <div class="col-lg-3 col-xs-3 text-center">
+              <a href="http://trustlines-network-slackinvite.herokuapp.com/{{ site.subreddit_name }}/">
+              <i class="fa fa-slack fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                  <!--<p>{{ site.subreddit_name }}</p>-->
+              </a>
+          </div>
+        </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>
+        </div>
+    </div>
+  </h5>
+</section>
+
+
+          <!--
+          Original code:
+          have to be updated manually!
+          order here determines the order on the page, TODO find method without manual assignment!
+          {% assign categories = "About the concept, Getting started" | split: ", " %}
+          {% assign categories = "About the concept" | split: ", " %}
+          {% for category in categories %}
+          <section {% cycle '', 'class="bg-dark"' %} id="main-text">
+          <div class="container ">
+          <div class="col-lg-12 text-center">
+            <h2> {{ category }} </h2>
+            <hr class="dark">
+          </div>
+          </div>
+          <div class="container ">
+            {% for faq in site.faq %}
+              {% if category == faq.category %}
+                <div class="col-lg-8 col-lg-offset-2 text-left">
+                  {{ faq.content }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          </div>
+        </div>
+            </section>
+        {% endfor %}
+        -->
