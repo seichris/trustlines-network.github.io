@@ -1,8 +1,70 @@
-{% assign categories = "Introduction to the concept" | split: ", " %}
-  {% for category in categories %}
-  <div class="header-content">
+<section class="bg-image2">
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+  <div class="container">
+  <div class="col-lg-5 text-center">
+        <h1>Table of Content</h1><hr class="dark">
+  </div>
+  <div style="margin-top: 60px">
+    <p>
+  <b>About the Concept</b><br>
+  What problems are you solving?<br>
+  What is People Powered Money?<br>
+  Why is blockchain a good fit for the Trustlines Network?<br>
+  What are trustlines and why a network?<br>
+  What is trustline money?
+    </p>
+    <p>
+  <b>Trustlines Network from a user perspective</b><br>
+How do users join the system?<br>
+How can users do payments if they don’t have to deposit money or link a credit card?<br>
+How do payments to anyone work, if users only need to trust their friends?<br>
+Do users need to have ETH to participate?<br>
+How does money get in and out of the system?<br>
+How does settlement of debt work?<br>
+How can a trustline be closed?<br>
+How secure is it to use the system?<br>
+What happens if a user fails to pay back debt owed to a friend?<br>
+    </p>
+    <p>
+  <b>How is the Trustlines Network different than</b><br>
+Traditional mobile payment apps?<br>
+Mined Cryptocurrencies like Bitcoin?<br>
+The Hawala System?<br>
+LETS & Community Currencies?<br>
+Ripple?<br>
+WeTrust?<br>
+Any further questions?<br>
+    </p>
+  </div>
+  <div class="col-lg-4 text-center">
+        <h1>Learn More</h1><hr class="dark">
+  </div>
+    <div style="margin-top: 60px">
+    <p>
+  <b>Videos</b><br>
+The Trustlines Network: Basic mechanics<br>
+The Trustlines Network: EDCON presentation<br>
+How money works: Banking-101<br>
+Bernard Lietaer: Why money needs to change now!<br>
+    </p>
+    <p>
+  <b>Publications</b><br>
+David Graeber on Debt: The first 5000 years (pdf)<br>
+Bank of England: Money creation in the modern economy (pdf)<br>
+People Money: The promise of regional currencies (pdf)<br>
+People Powered Money: designing, developing and delivering community currencies (pdf)<br>
+    </p>
+</div>
+  </div>
+</div>
+</div>
+</div>
+  <div class="col-lg-10 ">
       <div class="header-content-inner">
-  <section class="bg-image2" id="main-text">
+
+    <!--too much margin here. check out web inspect-->
 <div class="container">
 <div class="col-lg-12 text-center">
       <h1>FAQ</h1>
@@ -10,13 +72,12 @@
 </div>
 </div>
  <div class="col-lg-12 col-lg-offset-3 text-left" style="color: #ef5350">
-  <br>    
- 
+  <br>
+
 <br>
     </div>
 <div class="container">
-  {% for faq in site.faq %}
-  {% if category == faq.category %}
+
   <div class="col-lg-8 col-lg-offset-3 text-left">
  <h2 class="mb-0" style="color:#ef5350">About the Concept</h2>
        <div id="accordion" role="tablist" aria-multiselectable="true">
@@ -138,7 +199,7 @@
       <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
         <div class="padding" style="padding-bottom: 1px; padding-top: 1px">
         <div class="card-block">
-          <p>There is indeed no need to deposit money, link a credit card, or even own an ID or have a bank account to use the Trustlines Network. The spendable balance of an account is based on the credit lines that were given. When two users give each other credit lines, a network structure emerges such that a path of trusting users between any two participants can be found. This enables users to make payments to anyone through a network of friends-of-friends. This is similar to traditional banking, where a bank gives out a loan which can be used to pay other people. The main difference is that loans are not given out by a central entity but instead within a social peer-to-peer network, which is based on users who trust each other. 
+          <p>There is indeed no need to deposit money, link a credit card, or even own an ID or have a bank account to use the Trustlines Network. The spendable balance of an account is based on the credit lines that were given. When two users give each other credit lines, a network structure emerges such that a path of trusting users between any two participants can be found. This enables users to make payments to anyone through a network of friends-of-friends. This is similar to traditional banking, where a bank gives out a loan which can be used to pay other people. The main difference is that loans are not given out by a central entity but instead within a social peer-to-peer network, which is based on users who trust each other.
 </p>
         </div>
       </div>
@@ -290,7 +351,7 @@
     <div id="collapseSixteen" class="collapse" role="tabpanel" aria-labelledby="headingSixteen">
       <div class="padding" style="padding-bottom: 1px; padding-top: 1px">
       <div class="card-block">
-        <p>Mined cryptocurrencies like Bitcoin are virtual commodity-based money systems. Users usually need to buy them with fiat currency (e.g. USD) first, before they can use them for payments. 
+        <p>Mined cryptocurrencies like Bitcoin are virtual commodity-based money systems. Users usually need to buy them with fiat currency (e.g. USD) first, before they can use them for payments.
           Cryptocurrencies on the Trustlines Network are <a href="https://en.wikipedia.org/wiki/IOU">IOUs</a> created between users who trust each other. Trustline money is created and destroyed when the imbalance of a trustline is increased or decreased. This means that users do not need to buy anything with fiat first. Rather, they simply need a contact on the network who trusts that they can repay the amount at a later point in time.
 </p>
       </div>
@@ -323,7 +384,7 @@
     <div id="collapseEightteen" class="collapse" role="tabpanel" aria-labelledby="headingEightteen">
       <div class="padding" style="padding-bottom: 1px; padding-top: 1px">
       <div class="card-block">
-        <p>The Trustlines Network is very much inspired by how a <a href="http://wiki.p2pfoundation.net/LETS">LETS</a> (Local Exchange Trade) works. Ryan Fugger, the inventor of <a href="https://classic.ripplepay.com/">Classic Ripple</a>, came up with the idea as a suggestion for “bringing more accountability into users’ spending of credit in a LETS system”. Unlike LETS, which is a <a href="http://wiki.p2pfoundation.net/Mutual_Credit">mutual-credit system</a> that only tracks obligations to- and from- a single central intermediary, the Trustlines Network tracks bilateral obligations between individuals in a social network. This means that users in the Trustlines Network only maintain a credit relationship with the friends they have actively decided to trust. Further, the system makes it easy to set up community currencies without the requirement of a central governor. It also provides the added benefit of being optionally exchangeable with other currencies on the platform. 
+        <p>The Trustlines Network is very much inspired by how a <a href="http://wiki.p2pfoundation.net/LETS">LETS</a> (Local Exchange Trade) works. Ryan Fugger, the inventor of <a href="https://classic.ripplepay.com/">Classic Ripple</a>, came up with the idea as a suggestion for “bringing more accountability into users’ spending of credit in a LETS system”. Unlike LETS, which is a <a href="http://wiki.p2pfoundation.net/Mutual_Credit">mutual-credit system</a> that only tracks obligations to- and from- a single central intermediary, the Trustlines Network tracks bilateral obligations between individuals in a social network. This means that users in the Trustlines Network only maintain a credit relationship with the friends they have actively decided to trust. Further, the system makes it easy to set up community currencies without the requirement of a central governor. It also provides the added benefit of being optionally exchangeable with other currencies on the platform.
 </p>
       </div>
     </div>
@@ -355,7 +416,7 @@
     <div id="collapseTwenty" class="collapse" role="tabpanel" aria-labelledby="headingTwenty">
       <div class="padding" style="padding-bottom: 1px; padding-top: 1px">
       <div class="card-block">
-        <p>The Trustlines Network and <a href="https://www.wetrust.io/">WeTrust</a> are both platforms built on the Ethereum blockchain with the purpose of leveraging social capital and trust to improve financial inclusion. They are different in that WeTrust implements "Trusted Lending Circles", while the Trustlines Network is mainly a payment network based on bilateral trust relationships. 
+        <p>The Trustlines Network and <a href="https://www.wetrust.io/">WeTrust</a> are both platforms built on the Ethereum blockchain with the purpose of leveraging social capital and trust to improve financial inclusion. They are different in that WeTrust implements "Trusted Lending Circles", while the Trustlines Network is mainly a payment network based on bilateral trust relationships.
 </p>
       </div>
     </div>
@@ -379,18 +440,10 @@
 </div>
 </div>
   </div>
-  
 
-
-    {% endif %}
-  {% endfor %}
-
-
-
-{% endfor %}    
      <div class="container" style="padding-top: 30px">
   <div class="col-lg-12 text-center">
-        <h1>Learn More</h1>       
+        <h1>Learn More</h1>
         <hr class="dark">
       <div class="col-lg-8 col-lg-offset-3 text-left">
         <h2 class="mb-0" style="color:#ef5350">Videos</h2>
@@ -412,7 +465,8 @@
         <br>
          </h3>
        </div>
-<section class="bg-image2 col-lg-offset-2" id="social" style="padding: 10px" !important>
+     </section>
+<section class=" col-lg-offset-2" id="social" style="padding: 10px" !important>
   <h5 class="mb-2">
     <div class="container" style="padding-top: 20px" !important>
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
@@ -442,36 +496,6 @@
           </div>
         </div>
     </div>
+    </div>
   </h5>
 </section>
-
-
-          <!--
-          Original code:
-          have to be updated manually!
-          order here determines the order on the page, TODO find method without manual assignment!
-          {% assign categories = "About the concept, Getting started" | split: ", " %}
-          {% assign categories = "About the concept" | split: ", " %}
-          {% for category in categories %}
-          <section {% cycle '', 'class="bg-dark"' %} id="main-text">
-          <div class="container ">
-          <div class="col-lg-12 text-center">
-            <h3> {{ category }} </h3>
-            <hr class="dark">
-          </div>
-          </div>
-          <div class="container ">
-            {% for faq in site.faq %}
-              {% if category == faq.category %}
-                <div class="col-lg-8 col-lg-offset-2 text-left">
-                  {{ faq.content }}
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
-          </div>
-        </div>
-            </section>
-        {% endfor %}
-        -->
-
