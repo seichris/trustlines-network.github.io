@@ -1,7 +1,7 @@
-# Trustlines Network 
+# Trustlines Network
 
-Enabling permissionless mobile payments based on people powered money. 
-Join the conversation on Slack: http://v.ht/rDR4 
+Enabling permissionless mobile payments based on people powered money.
+Join the conversation on Slack: http://v.ht/rDR4
 Read the white paper: http://trustlines.network/whitepaper.html
 
 Made using Jekyll Pages
@@ -40,8 +40,8 @@ All questions with the same category will be grouped together.
 has to be edited directly in the `_includes/bootstrapping.html` file (https://github.com/trustlines-network/trustlines-network.github.io/blob/master/_includes/bootstrapping.html)
 
 #### "Contact":
-has to be edited directly in the `_includes/contact.html` file
-(https://github.com/trustlines-network/trustlines-network.github.io/blob/master/_includes/contact.html)
+has to be edited directly in the `_includes/links.html` file
+(https://github.com/trustlines-network/trustlines-network.github.io/blob/master/_includes/links.html)
 
 #### "Join us on Slack":
 has to be edited directly in the `_includes/aside.html` file:
