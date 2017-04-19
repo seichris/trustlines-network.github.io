@@ -245,13 +245,27 @@ aside {
                 }
             }
             &.social-icon {
-              width: 40px !important;
+              width: 45px !important;
+            }
+            &:not(.social-icon) {
+              > a:after {
+                    content: "";
+                    left: 45%;
+                    bottom: -15px;
+                    width: 8px;
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    border-radius: 50%;
+                    border: 1px solid rgba(255, 255, 255, 0.7);
+                    position: absolute;
+                    transition: background .35s ease-in;
+                }
             }
         }
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .001);
+        border-color: rgba(white, .7);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
@@ -264,11 +278,26 @@ aside {
             color: rgba(white, .7);
             height: 40px !important;
             padding-top: 15px !important;
-            padding-right: 30px !important;
-            padding-left: 10px !important;
+            //padding-right: 30px !important;
+            //padding-left: 10px !important;
             font-size: 16px !important;
             &:hover {
                 color: white;
+            }
+        }
+        .nav > li {
+            &:not(.social-icon) {
+              > a:hover:after {
+                  content: "";
+                  left: 45%;
+                  bottom: -15px;
+                  width: 8px;
+                  height: 8px;
+                  background-color: white;
+                  border-radius: 50%;
+                  border: 1px solid white;
+                  position: absolute;
+                }
             }
         }
         //remove `affix-top` to change to transparent behaviour
@@ -292,11 +321,20 @@ aside {
                 color: $theme-dark;
                 height: 40px !important;
                 padding-top: 15px !important;
-                padding-right: 30px !important;
-                padding-left: 10px !important;
+                //padding-right: 30px !important;
+                //padding-left: 10px !important;
                 font-size: 16px !important;
+                &:after {
+                  border-color: rgba($theme-dark, .5);
+                  background-color: white;
+                }
                 &:hover {
                     color: $theme-primary;
+                    &:after {
+                      border-color: $theme-primary;
+                      background-color: $theme-primary;
+                      transition: background .35s ease-in;
+                    }
                 }
             }
         }
