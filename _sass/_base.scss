@@ -641,6 +641,85 @@ header {
     height: 28px;
     width: 150px;
 }
+@media (min-width: 1200px) {
+    #easy-onboarding {
+        height: 800px;
+        padding-top: 50px;
+        margin-left: -130px;
+    }
+    .easy-onboarding-text-0 {
+        margin-top: 10px;
+    }
+    .easy-onboarding-text-1 {
+        padding-top: 75px;
+    }
+    .easy-onboarding-text-2 {
+        padding-top: 45px;
+    }
+    .easy-onboarding-text-3 {
+        padding-top: 368px;
+        padding-left: 67px;
+    }
+    .ethereum_mobile {
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #easy-onboarding {
+        height: 800px;
+        padding-top: 50px;
+    }
+    .easy-onboarding-text-0 {
+        margin-top: 10px;
+    }
+    .easy-onboarding-text-1 {
+        padding-top: 75px;
+    }
+    .easy-onboarding-text-2 {
+        padding-top: 45px;
+    }
+    .easy-onboarding-text-3 {
+        padding-top: 368px;
+        padding-left: 67px;
+    }
+    .ethereum_mobile {
+        height: 400px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    #easy-onboarding {
+        height: 420px;
+        padding-top: 50px;
+        margin-left: 0px;
+    }
+    .easy-onboarding-text-0 {
+        margin-top: 10px;
+    }
+    .easy-onboarding-text-1 {
+        padding-top: 55px;
+        > h3 {
+            font-size: 15px;
+        }
+    }
+    .easy-onboarding-text-2 {
+        padding-top: 0px;
+        > h3 {
+            font-size: 15px;
+        }
+    }
+    .ethereum_mobile {
+      height: 300px;
+    }
+    .people-image {
+        height: 185px !important;
+    }
+}
+
+.highlight-text {
+    color: $theme-primary;
+}
 
 // Extras
 // -- Highlight Color Customization
