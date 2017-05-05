@@ -364,6 +364,11 @@ header {
         height: auto;
         width: auto;
       }
+      @media all and (max-height: 690px) and (min-width: 550px) {
+        max-width: 40%;
+        height: auto;
+        width: auto;
+      }
     }
     .header-logo {
       @media all and (max-width: 550px) {
@@ -372,6 +377,11 @@ header {
       }
       @media all and (max-width: 4500px) {
         max-width: 30%;
+        height: auto;
+        width: auto;
+      }
+      @media all and (max-height: 690px) and (min-width: 550px) {
+        max-width: 25%;
         height: auto;
         width: auto;
       }
