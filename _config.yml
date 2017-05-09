@@ -1,7 +1,7 @@
 # Site settings
 title: Trustlines Network
 email:
-description: "Permissionless mobile payments based on people powered money"
+description: "People powered money"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 author: brainbot technologies AG
