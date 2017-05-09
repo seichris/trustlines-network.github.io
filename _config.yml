@@ -1,7 +1,6 @@
 # Site settings
-title: Trustlines Network
+title: Trustlines Network | People powered money
 email:
-description: "People powered money"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 author: brainbot technologies AG
