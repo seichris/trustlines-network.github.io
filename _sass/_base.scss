@@ -623,7 +623,7 @@ header {
 #contact .fa {
     @extend a;
     color: $theme-dark;
-    font-size: 2em;
+    font-size: 2em !important;
     vertical-align: middle;
 }
 
