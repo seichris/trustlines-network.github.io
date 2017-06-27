@@ -1,5 +1,5 @@
 # Site settings
-title: Trustlines Network | People Powered Money
+title: Trustlines Network
 email:
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site

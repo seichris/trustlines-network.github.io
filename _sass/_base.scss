@@ -623,7 +623,8 @@ header {
 #contact .fa {
     @extend a;
     color: $theme-dark;
-    font-size: 4em;
+    font-size: 2em;
+    vertical-align: middle;
 }
 
 #join-slack {
