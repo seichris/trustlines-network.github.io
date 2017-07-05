@@ -10,7 +10,7 @@ slack_invite_url: http://trustlines-network-slackinvite.herokuapp.com
 github_username: trustlines-network
 facebook_username: Trustlines.Network
 subreddit_name: Trustlines
-medium_name: Trustlines
+medium_name: Trustlines_Net
 
 gems:
   - jekyll-seo-tag
