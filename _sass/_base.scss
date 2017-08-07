@@ -680,6 +680,14 @@ header {
      }
 }
 
+@keyframes toColor {
+    0%    { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+    25%   { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+    50%   { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+    50%   { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+    100%  { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+}
+
 #bblink:hover
 {
     background: url('../img/bblogo.png');
@@ -687,7 +695,9 @@ header {
     //padding-top: 10px !important;
     height: 28px;
     width: 150px;
+    animation: toColor 0.5s;
 }
+
 .ethereum_mobile {
     @media (max-width: 1200px) {
         height: 300px;
