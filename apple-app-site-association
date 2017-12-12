@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "1274919729.network.trustlines.mobile.app",
+                "paths": [ "/v1/*"]
+            }
+        ]
+    }
+}
