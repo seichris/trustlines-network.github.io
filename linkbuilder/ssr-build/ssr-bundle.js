@@ -521,7 +521,7 @@ var index_App = function (_Component) {
     if (typeof window !== 'undefined') {
       this.setState({
         path: window.location.pathname,
-        url: scheme + '://' + host + '/' + window.location.pathname
+        url: scheme + '://' + host + window.location.pathname
       });
     }
   };
