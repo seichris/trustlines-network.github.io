@@ -1,0 +1,16 @@
+{
+  "name": "LinkBuilder",
+  "short_name": "LinkBuilder",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#ed5658",
+  "icons": [
+    {
+      "src": "/assets/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
