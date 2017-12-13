@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "network.trustlines.mobileapp",
+    "sha256_cert_fingerprints":
+    ["AB:91:70:68:96:BC:73:BF:09:AE:5F:5D:08:32:D7:FF:12:2B:08:5B:23:97:C1:58:BA:7D:EF:6F:9A:4B:D3:ED"]
+  }
+}]
