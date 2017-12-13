@@ -1,7 +1,7 @@
 {
   "name": "LinkBuilder",
   "short_name": "LinkBuilder",
-  "start_url": "/",
+  "start_url": "/linkbuilder",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
