@@ -559,7 +559,7 @@ var index_App = function (_Component) {
       state.url && Object(preact_min["h"])(
         'div',
         null,
-        Object(preact_min["h"])(
+        (md.os() === 'AndroidOS' || md.os() === 'iOS') && Object(preact_min["h"])(
           'a',
           { href: state.url, className: 'open-btn' },
           'Open the app'
